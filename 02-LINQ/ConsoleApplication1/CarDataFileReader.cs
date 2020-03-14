@@ -13,19 +13,17 @@ namespace ConsoleApplication1
         public static IList<Car> ReadCarsFromCSVFile()
         {
             var cars = new List<Car>();
-            ///
-            /// TODO: Provide file path
-            /// 
-            TextReader textReader = new StreamReader(@"D:\cars.csv");
+            TextReader textReader = new StreamReader(@"C:\Users\Ananas\Downloads\cars.csv");
             textReader.ReadLine();
             string[] linesFromFile = textReader.ReadToEnd().Split('\n');
             foreach (var line in linesFromFile)
             {
                 string[] fields = line.Split(';');
-                Car newCar = new Car();
-                newCar.SetMake(fields[0]);
-                newCar.SetSales2014(int.Parse(fields[1]));
-                newCar.SetSales2015(int.Parse(fields[2]));
+                Car newCar = new Car(fields[0])
+                {
+                Sales2014 = int.Parse(fields[1]),
+                Sales2015 = int.Parse(fields[2])
+            };
                 cars.Add(newCar);
             }
 
