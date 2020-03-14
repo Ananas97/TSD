@@ -19,31 +19,14 @@ namespace TSD.Linq.Cars
 
         private IList<Car> GenerateCars()
         {
-            List<Car> cars = new List<Car>();
-            Car car1 = new Car();
-            car1.SetMake("Skoda");
-            car1.SetSales2015(45529);
-            car1.SetSales2014(44243);
+            var cars = new List<Car>()
+            {
+            new Car("Skoda") { Sales2014 = 44243, Sales2015= 45529 },
+            new Car("Toyota") { Sales2014 = 31484, Sales2015 = 36465, NumberOfSeats = 5 },
+            new Car("BMW") { Sales2014 = 7714, Sales2015 = 9549 }
+            };
 
-            cars.Add(car1);
-
-            Car car2 = new Car();
-            car2.SetMake("Toyota");
-            car2.SetSales2015(36465);
-            car2.SetSales2014(31484);
-
-            cars.Add(car2);
-
-            Car car3 = new Car();
-            car3.SetMake("BMW");
-            car3.SetSales2015(9549);
-            car3.SetSales2014(7714);
-
-            cars.Add(car3);
-
-
-            IList<Car> sortedCars = cars.OrderBy(c => c.GetSales2015()).ToList();
-
+            IList<Car> sortedCars = cars.OrderBy(car => car.Sales2015).ToList();
             return cars;
         }
 
