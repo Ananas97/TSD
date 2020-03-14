@@ -21,7 +21,7 @@ namespace TSD.Linq.Cars
         {
             var cars = new List<Car>()
             {
-            new Car("Skoda") { Sales2014 = 44243, Sales2015= 45529 },
+            new Car("Skoda") { Sales2014 = 44243, Sales2015 = 45529 },
             new Car("Toyota") { Sales2014 = 31484, Sales2015 = 36465},
             new Car("BMW") { Sales2014 = 7714, Sales2015 = 9549 }
             };
