@@ -23,7 +23,7 @@ namespace ConsoleApplication1
                 {
                 Sales2014 = int.Parse(fields[1]),
                 Sales2015 = int.Parse(fields[2])
-            };
+                };
                 cars.Add(newCar);
             }
 
