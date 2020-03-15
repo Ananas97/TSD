@@ -12,9 +12,14 @@ namespace TSD.Linq.Cars
     {
         public IList<Car> Cars { get; private set; }
 
+        //public CarSalesBook()
+        //{
+        //    this.Cars = GenerateCars();
+        //}
+
         public CarSalesBook()
         {
-            this.Cars = GenerateCars();
+            this.Cars = ReadCarsFromFile();
         }
 
         private IList<Car> GenerateCars()

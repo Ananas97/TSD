@@ -13,7 +13,7 @@ namespace ConsoleApplication1
         public static IList<Car> ReadCarsFromCSVFile()
         {
             var cars = new List<Car>();
-            TextReader textReader = new StreamReader(@"C:\Users\Ananas\Downloads\cars.csv");
+            TextReader textReader = new StreamReader(@"C:\Users\Ananas\Downloads\Cars_Stat.csv");
             textReader.ReadLine();
             string[] linesFromFile = textReader.ReadToEnd().Split('\n');
             foreach (var line in linesFromFile)
