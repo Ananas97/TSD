@@ -10,11 +10,11 @@ namespace TSD.Linq.Cars
 {
     public class CarSalesBook
     {
-        private IList<Car> _cars;
+        public IList<Car> Cars { get; private set; }
 
         public CarSalesBook()
         {
-            _cars = GenerateCars();
+            this.Cars = GenerateCars();
         }
 
         private IList<Car> GenerateCars()
