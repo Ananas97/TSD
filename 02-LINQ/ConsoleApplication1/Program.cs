@@ -58,6 +58,11 @@ namespace ConsoleApplication1
             Console.WriteLine(" ---- Solution for (2.9)  ---- ");
             carSalesBook.WriteToXMLFile();
             Console.WriteLine("The results have been saved to an XML file.");
+            Console.WriteLine("----------------------------------------------------------------------------------------------");
+
+            Console.WriteLine(" ---- Solution for (2.10) ---- ");
+            carSalesBook.ReadFromXMLFile();
+            Console.WriteLine("----------------------------------------------------------------------------------------------");
 
             Console.ReadLine();
 
