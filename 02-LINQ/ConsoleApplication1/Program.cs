@@ -30,7 +30,7 @@ namespace ConsoleApplication1
             Console.WriteLine("----------------------------------------------------------------------------------------------");
 
             Console.WriteLine(" ---- Solution for which 3 makes opens the second ten of the sales ranking in 2015(2.6)  ---- ");
-            IEnumerable<Car> salesFirst3SecondTOP10 = carSalesBook.Cars.OrderByDescending(c => c.Sales2014).Skip(10).Take(3); ;
+            IEnumerable<Car> salesFirst3SecondTOP10 = carSalesBook.Cars.OrderByDescending(c => c.Sales2015).Skip(10).Take(3); ;
             foreach (Car c in salesFirst3SecondTOP10)
             {
                 Console.WriteLine(c.Make);
