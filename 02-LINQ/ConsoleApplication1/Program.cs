@@ -37,14 +37,14 @@ namespace ConsoleApplication1
             }
             Console.WriteLine("----------------------------------------------------------------------------------------------");
 
-            Console.WriteLine(" ---- Solution for What are the totals of sold cars in 2014 and 2015(2.7)  ---- ");
+            Console.WriteLine(" ---- Solution for what are the totals of sold cars in 2014 and 2015(2.7)  ---- ");
             int soldCarsInTotalIn2014 = carSalesBook.Cars.Sum(c => c.Sales2014);
             int soldCarsInTotalIn2015 = carSalesBook.Cars.Sum(c => c.Sales2015);
             Console.WriteLine("Totals of sold cars in 2014 are {0}.\n Totals of sold cars in 2015 are {1}.",
                 soldCarsInTotalIn2014, soldCarsInTotalIn2015);
             Console.WriteLine("----------------------------------------------------------------------------------------------");
 
-            Console.WriteLine(" ---- Solution for eate a list that contains TOP10 and LAST 10 cars with respect to sales in 2015(2.8)  ---- ");
+            Console.WriteLine(" ---- Solution for create a list that contains TOP10 and LAST 10 cars with respect to sales in 2015(2.8)  ---- ");
             var query = carSalesBook.Cars.OrderByDescending(c => c.Sales2015).Take(10);
             var query2 = carSalesBook.Cars.OrderByDescending(c => c.Sales2015).Reverse().Take(10);
             IEnumerable<Car> listTop10Last10In2015 = query.ToList<Car>();
