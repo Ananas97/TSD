@@ -44,6 +44,17 @@ namespace ConsoleApplication1
                 soldCarsInTotalIn2014, soldCarsInTotalIn2015);
             Console.WriteLine("----------------------------------------------------------------------------------------------");
 
+            Console.WriteLine(" ---- Solution for eate a list that contains TOP10 and LAST 10 cars with respect to sales in 2015(2.8)  ---- ");
+            var query = carSalesBook.Cars.OrderByDescending(c => c.Sales2015).Take(10);
+            var query2 = carSalesBook.Cars.OrderByDescending(c => c.Sales2015).Reverse().Take(10);
+            IEnumerable<Car> listTop10Last10In2015 = query.ToList<Car>();
+            listTop10Last10In2015 = listTop10Last10In2015.Concat(query2.ToList<Car>());
+            foreach (Car c in listTop10Last10In2015)
+            {
+                Console.WriteLine(c.Make);
+            }
+            Console.WriteLine("----------------------------------------------------------------------------------------------");
+
             Console.ReadLine();
 
         }
