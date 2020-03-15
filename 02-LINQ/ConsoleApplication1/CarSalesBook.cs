@@ -47,24 +47,36 @@ namespace TSD.Linq.Cars
 
         public void WriteToXMLFile()
         {
-            XmlWriter xmlWriter = XmlWriter.Create("cars.xml");
+       
+            XDocument xmlTree = new XDocument(
+                new XElement("cars",
+                from c in Cars
+                select new XElement("car",
+                    new XAttribute("Make", c.Make),
+                    new XElement("Sales2014", c.Sales2014.ToString()),
+                    new XElement("Sales2015", c.Sales2015.ToString())
+                )
+             )
+           );
+            xmlTree.Save("cars.xml");
+            //XmlWriter xmlWriter = XmlWriter.Create("cars.xml");
 
-            xmlWriter.WriteStartDocument();
-            xmlWriter.WriteStartElement("cars");
+            //xmlWriter.WriteStartDocument();
+            //xmlWriter.WriteStartElement("cars");
 
-            foreach (var c in Cars)
-            {
-                string sale2014 = c.Sales2014.ToString();
-                string sale2015 = c.Sales2015.ToString();
-                xmlWriter.WriteStartElement("car");
-                xmlWriter.WriteAttributeString("Make", c.Make);
-                xmlWriter.WriteElementString("Sales2014", sale2014);
-                xmlWriter.WriteElementString("Sales2015", sale2015);
-                xmlWriter.WriteEndElement();
-            }
+            //foreach (var c in Cars)
+            //{
+            //    string sale2014 = c.Sales2014.ToString();
+            //    string sale2015 = c.Sales2015.ToString();
+            //    xmlWriter.WriteStartElement("car");
+            //    xmlWriter.WriteAttributeString("Make", c.Make);
+            //    xmlWriter.WriteElementString("Sales2014", sale2014);
+            //    xmlWriter.WriteElementString("Sales2015", sale2015);
+            //    xmlWriter.WriteEndElement();
+            //}
 
-            xmlWriter.WriteEndDocument();
-            xmlWriter.Close();
+            //xmlWriter.WriteEndDocument();
+            //xmlWriter.Close();
         }
         public void ReadFromXMLFile()
         {
