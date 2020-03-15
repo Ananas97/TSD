@@ -58,7 +58,6 @@ namespace TSD.Linq.Cars
                 string sale2015 = c.Sales2015.ToString();
                 xmlWriter.WriteStartElement("car");
                 xmlWriter.WriteAttributeString("Make", c.Make);
-                //xmlWriter.WriteElementString("Make", c.Make);
                 xmlWriter.WriteElementString("Sales2014", sale2014);
                 xmlWriter.WriteElementString("Sales2015", sale2015);
                 xmlWriter.WriteEndElement();
