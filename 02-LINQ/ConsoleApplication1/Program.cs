@@ -55,6 +55,10 @@ namespace ConsoleApplication1
             }
             Console.WriteLine("----------------------------------------------------------------------------------------------");
 
+            Console.WriteLine(" ---- Solution for (2.9)  ---- ");
+            carSalesBook.WriteToXMLFile();
+            Console.WriteLine("The results have been saved to an XML file.");
+
             Console.ReadLine();
 
         }
