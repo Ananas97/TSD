@@ -30,11 +30,18 @@ namespace ConsoleApplication1
             Console.WriteLine("----------------------------------------------------------------------------------------------");
 
             Console.WriteLine(" ---- Solution for which 3 makes opens the second ten of the sales ranking in 2015(2.6)  ---- ");
-            IEnumerable<Car> salesFirst3SecondTOP10 = carSalesBook.Cars.OrderByDescending(c => c.Sales2015).Skip(10).Take(3); ;
+            IEnumerable<Car> salesFirst3SecondTOP10 = carSalesBook.Cars.OrderByDescending(c => c.Sales2015).Skip(10).Take(3);
             foreach (Car c in salesFirst3SecondTOP10)
             {
                 Console.WriteLine(c.Make);
             }
+            Console.WriteLine("----------------------------------------------------------------------------------------------");
+
+            Console.WriteLine(" ---- Solution for What are the totals of sold cars in 2014 and 2015(2.7)  ---- ");
+            int soldCarsInTotalIn2014 = carSalesBook.Cars.Sum(c => c.Sales2014);
+            int soldCarsInTotalIn2015 = carSalesBook.Cars.Sum(c => c.Sales2015);
+            Console.WriteLine("Totals of sold cars in 2014 are {0}.\n Totals of sold cars in 2015 are {1}.",
+                soldCarsInTotalIn2014, soldCarsInTotalIn2015);
             Console.WriteLine("----------------------------------------------------------------------------------------------");
 
             Console.ReadLine();
