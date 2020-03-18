@@ -28,7 +28,9 @@ Increment
 Get-Date -f "dddd, MMMM dd, yyy"
 #task 5
 #implementation
-Get-ChildItem  | Sort-Object | Format-Table Name, Length
+Get-ChildItem  | Sort-Object -Property Name | Format-Table Name, Length
 #task 7
 #implementation
 Get-ChildItem -Recurse  | Where-Object -FilterScript {($_.Length -ge 1mb)}
+#task 8
+Get-ChildItem  | Select-Object Name, Length |Sort-Object -Property Name |Out-GridView
