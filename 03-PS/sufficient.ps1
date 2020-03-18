@@ -26,3 +26,6 @@ Increment
 #task 3
 #implementation
 Get-Date -f "dddd, MMMM dd, yyy"
+#task 5
+#implementation
+ Get-ChildItem  | Sort-Object | Format-Table Name, Length
