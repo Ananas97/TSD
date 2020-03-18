@@ -29,3 +29,6 @@ Get-Date -f "dddd, MMMM dd, yyy"
 #task 5
 #implementation
  Get-ChildItem  | Sort-Object | Format-Table Name, Length
+ #task 7
+ #implementation
+ Get-ChildItem -Recurse  | Where-Object -FilterScript {($_.Length -ge 1mb)}
