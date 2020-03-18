@@ -23,3 +23,6 @@ return $number + $incrementValue;
 Increment 2 5 
 Increment 3    
 Increment 
+#task 3
+#implementation
+Get-Date -f "dddd, MMMM dd, yyy"
