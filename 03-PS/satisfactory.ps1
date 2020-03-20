@@ -8,5 +8,4 @@ Get-Process | Select-Object CPU, ProcessName | Where-Object { $_.CPU -gt 10 }> C
 
 # task3
 $file = Invoke-WebRequest -Uri https://sleepy-wilson-d2b50e.netlify.com/powershell/MSDN.txt
-$file.Content | findstr "PowerShell"
-#number of line is missing
+$file.Content | findstr /N "PowerShell"
