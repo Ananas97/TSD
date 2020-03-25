@@ -33,3 +33,4 @@ C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\Yummy\obj\Debug\netcoreapp3.1\Yummy.
 C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\Yummy\obj\Debug\netcoreapp3.1\Yummy.dll
 C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\Yummy\obj\Debug\netcoreapp3.1\Yummy.pdb
 C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\Yummy\obj\Debug\netcoreapp3.1\Yummy.csproj.CopyComplete
+C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\Yummy\obj\Debug\netcoreapp3.1\Razor\Views\Recipe\Index.cshtml.g.cs
