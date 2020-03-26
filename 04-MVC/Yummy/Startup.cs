@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Yummy.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Yummy
 {
@@ -24,7 +26,10 @@ namespace Yummy
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<YummyContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("YummyContext")));
         }
+ 
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
