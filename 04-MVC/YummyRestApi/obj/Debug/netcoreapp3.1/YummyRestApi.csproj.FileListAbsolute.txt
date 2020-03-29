@@ -142,4 +142,5 @@ C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1
 C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\obj\Debug\netcoreapp3.1\YummyRestApi.MvcApplicationPartsAssemblyInfo.cache

@@ -11,7 +11,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using YummyRestApi.models;
 using YummyRestApi.Models;
 
 namespace YummyRestApi
@@ -29,7 +28,29 @@ namespace YummyRestApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<RecipeContext>(opt =>
-            opt.UseInMemoryDatabase("RecipeItems"));
+            opt.UseInMemoryDatabase("RecipeList"));
+            //services.AddDbContext<RecipeContext>
+            //      (options => options.UseSqlServer(Configuration.GetConnectionString("CrystalProcessDatabase")));
+            //HACK 
+            //IServiceProvider serviceProvider = services.BuildServiceProvider();
+            //var env = serviceProvider.GetService<IHostingEnvironment>();
+            ////logic in here to configure correct DB 
+            //if (env.IsEnvironment("IntegrationTests"))
+            //{
+            //    services.AddEntityFrameworkInMemoryDatabase();
+
+            //    services.AddDbContext<ApplicationDbContext>(options =>
+            //    {
+            //        options.UseInMemoryDatabase("InMemoryDbForTesting");
+            //    });
+            //}
+            //else
+            //{
+            //    services.AddDbContext<ApplicationDbContext>
+            //        (options => options.UseSqlServer(Configuration.GetConnectionString("CrystalProcessDatabase")));
+
+            //}
+
             services.AddControllers();
         }
 
