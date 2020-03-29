@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using StackExchange.Redis;
 using YummyRestApi.Models;
 
 namespace YummyRestApi.Controllers
@@ -25,6 +26,9 @@ namespace YummyRestApi.Controllers
         public async Task<ActionResult<IEnumerable<RecipeItem>>> GetRecipeItems()
         {
             return await _context.RecipeItems.ToListAsync();
+           // return await _context.RecipeItems
+           //.Select(x => ItemToDTO(x))
+           //.ToListAsync();
         }
 
         // GET: api/RecipeItems/5
@@ -77,7 +81,7 @@ namespace YummyRestApi.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for
         // more details see https://aka.ms/RazorPagesCRUD.
         [HttpPost]
-        public async Task<ActionResult<RecipeItem>> PostRecipeItem(RecipeItem recipeItem)
+        public async Task<ActionResult<RecipeItem>> PostRecipeItem([Bind(include: "Name, Time, Difficulty, NumberOfLikes, Ingredients, Process, TipsAndTricks")] RecipeItem recipeItem)
         {
             _context.RecipeItems.Add(recipeItem);
             await _context.SaveChangesAsync();

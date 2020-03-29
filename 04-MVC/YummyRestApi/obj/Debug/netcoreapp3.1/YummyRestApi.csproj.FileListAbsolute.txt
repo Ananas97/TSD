@@ -143,4 +143,8 @@ C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1
 C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1\Pipelines.Sockets.Unofficial.dll
+C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1\StackExchange.Redis.dll
+C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
 C:\Users\Ananas\Desktop\REPO for tsd\04-MVC\YummyRestApi\obj\Debug\netcoreapp3.1\YummyRestApi.MvcApplicationPartsAssemblyInfo.cache
