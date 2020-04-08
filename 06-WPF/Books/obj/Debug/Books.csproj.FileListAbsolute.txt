@@ -1,0 +1,14 @@
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\bin\Debug\Books.exe.config
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\bin\Debug\Books.exe
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\bin\Debug\Books.pdb
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books.csprojAssemblyReference.cache
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\MainWindow.g.cs
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\App.g.cs
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books_MarkupCompile.cache
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books_MarkupCompile.lref
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\MainWindow.baml
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books.g.resources
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books.Properties.Resources.resources
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books.csproj.GenerateResource.cache
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books.exe
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books.pdb
