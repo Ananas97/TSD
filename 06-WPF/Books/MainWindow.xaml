@@ -75,8 +75,8 @@
                     <RowDefinition Height="auto"/>
                     <RowDefinition Height="auto"/>
                 </Grid.RowDefinitions>
-                <Label Grid.Column="0" Grid.Row="0" Content="ID" Margin="70,10,0.4,37.2" Grid.RowSpan="2" />
-                <Label Grid.Row="0" x:Name="Id" Content="" Margin="198,5,9.8,4.6" Grid.ColumnSpan="2"/>
+                <Label Grid.Column="0" Grid.Row="0" Content="Id" Margin="70,10,0.4,37.2" Grid.RowSpan="2" />
+                <Label Grid.Row="0" x:Name="Id" Content="" Margin="10.8,10,9.6,10.2" Grid.Column="1"/>
                 <Label Grid.Column="0" Grid.Row="1" Content="Title" Margin="70,0.4,181.8,0.2" Grid.ColumnSpan="2"/>
                 <TextBox Grid.Row="1" x:Name="Title" Margin="10.4,10.2,9.4,10.4" Grid.Column="1"/>
                 <Label Grid.Column="0" Grid.Row="2" Content="Author" Margin="70,4.6,0.4,43" Grid.RowSpan="2"/>
@@ -87,7 +87,7 @@
                 <CheckBox Grid.Column="1" Grid.Row="3" x:Name="IsRead" Margin="10.8,91.8,124.6,10.2" Grid.RowSpan="2" />
                 <Label Grid.Column="0" Grid.Row="5" Content="Format" Margin="70,0,0.4,0.4"/>
                 <ComboBox Grid.Column="1" Grid.Row="5" x:Name="Format" Margin="0.8,0.6,20.6,18.6" />
-                <Button Grid.Row="5" Content="Delete" HorizontalAlignment="Right" Click="Delete" Grid.Column="1" Margin="0,42.6,-14.4,-35.2" Width="88"/>
+                <Button Grid.Row="5" Content="Delete" HorizontalAlignment="Right" Click="Delete" Grid.Column="1" Margin="0,32.2,-68.4,-24.8" Width="88"/>
             </Grid>
         </Grid>
     </Grid>
