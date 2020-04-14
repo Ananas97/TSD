@@ -9,7 +9,7 @@ namespace Books
 {
     class BooksModel
     {
-            public ObservableCollection<Book> Books { get; private set; }
+            public ObservableCollection<Book> Books { get; set; }
             public BooksModel()
             {
             Books = new ObservableCollection<Book>();

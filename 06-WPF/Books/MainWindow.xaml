@@ -14,6 +14,10 @@
         </Grid.RowDefinitions>
         <Grid Grid.Row="0">
             <Image Source="C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\Buecher-coloured.png" Margin="5,0,9.6,0" HorizontalAlignment="Left"/>
+            <Label VerticalAlignment="Center" HorizontalAlignment="Left" FontFamily="Trebuchet MS" 
+ FontWeight="Bold" FontSize="12" Foreground="#0066cc" Margin="92,26,-92.4,10">
+                My Books:
+            </Label>
         </Grid>
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
@@ -21,7 +25,7 @@
                 <ColumnDefinition Name="Right" Width="1*" />
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
-                <ListBox ItemsSource="{Binding Books}" x:Name="Books_List">
+                <ListBox ItemsSource="{Binding Books}" x:Name="Books_List" Margin="0,26,-0.2,50">
                     <ListBox.Template>
                         <ControlTemplate>
                             <DockPanel LastChildFill="False">
@@ -54,6 +58,36 @@
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Button Content="Add" Height="20" Margin="10,229,287.8,51" Click="Add"/>
+            </Grid>
+            <Grid Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0" Content="ID" Margin="70,10,0.4,37.2" Grid.RowSpan="2" />
+                <Label Grid.Row="0" x:Name="Id" Content="" Margin="198,5,9.8,4.6" Grid.ColumnSpan="2"/>
+                <Label Grid.Column="0" Grid.Row="1" Content="Title" Margin="70,0.4,181.8,0.2" Grid.ColumnSpan="2"/>
+                <TextBox Grid.Row="1" x:Name="Title" Margin="10.4,10.2,9.4,10.4" Grid.Column="1"/>
+                <Label Grid.Column="0" Grid.Row="2" Content="Author" Margin="70,4.6,0.4,43" Grid.RowSpan="2"/>
+                <TextBox Grid.Column="1" Grid.Row="2" x:Name="Author" Margin="10.4,4.6,9.4,5.2"/>
+                <Label Grid.Column="0" Grid.Row="3" Content="Year" Margin="70,4.4,0.4,21.6"/>
+                <TextBox Grid.Row="3" x:Name="Year" Margin="10.8,9.8,9.6,90" Grid.Column="1"/>
+                <Label Grid.Column="1" Grid.Row="3" Content="IsRead" Margin="48.8,85.8,9.6,0.2" Grid.RowSpan="2" />
+                <CheckBox Grid.Column="1" Grid.Row="3" x:Name="IsRead" Margin="10.8,91.8,124.6,10.2" Grid.RowSpan="2" />
+                <Label Grid.Column="0" Grid.Row="5" Content="Format" Margin="70,0,0.4,0.4"/>
+                <ComboBox Grid.Column="1" Grid.Row="5" x:Name="Format" Margin="0.8,0.6,20.6,18.6" />
+                <Button Grid.Row="5" Content="Delete" HorizontalAlignment="Right" Click="Delete" Grid.Column="1" Margin="0,42.6,-14.4,-35.2" Width="88"/>
             </Grid>
         </Grid>
     </Grid>
