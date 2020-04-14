@@ -87,7 +87,7 @@
                 <CheckBox Grid.Column="1" Grid.Row="3" x:Name="IsRead" Margin="10.8,91.8,124.6,10.2" Grid.RowSpan="2" />
                 <Label Grid.Column="0" Grid.Row="5" Content="Format" Margin="70,0,0.4,0.4"/>
                 <ComboBox Grid.Column="1" Grid.Row="5" x:Name="Format" Margin="0.8,0.6,20.6,18.6" />
-                <Button Grid.Row="5" Content="Delete" HorizontalAlignment="Right" Click="Delete" Grid.Column="1" Margin="0,32.2,-68.4,-24.8" Width="88"/>
+                <Button Grid.Row="6" Content="Delete" HorizontalAlignment="Right" Click="Delete" Grid.Column="1" Margin="0,32.2,-68.4,-24.8" Width="88"/>
             </Grid>
         </Grid>
     </Grid>
