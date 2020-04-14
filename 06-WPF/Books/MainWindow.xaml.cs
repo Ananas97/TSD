@@ -22,6 +22,7 @@ namespace Books
     {
         public MainWindow()
         {
+            this.DataContext = new BooksModel();
             InitializeComponent();
         }
     }

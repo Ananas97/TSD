@@ -7,6 +7,54 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Image Source="C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\Buecher-coloured.png" Margin="5,0,9.6,0" HorizontalAlignment="Left"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Name="Left" Width="1*" />
+                <ColumnDefinition Name="Right" Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0">
+                <ListBox ItemsSource="{Binding Books}" x:Name="Books_List">
+                    <ListBox.Template>
+                        <ControlTemplate>
+                            <DockPanel LastChildFill="False">
+                                <Grid DockPanel.Dock="Top" Height="35">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="20"></ColumnDefinition>
+                                        <ColumnDefinition Width="320"></ColumnDefinition>
+                                        <ColumnDefinition Width="60"></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Label Grid.Column="0" HorizontalAlignment="Center" >Id</Label>
+                                    <Label Grid.Column="1" HorizontalAlignment="Center">Title</Label>
+                                    <Label Grid.Column="2" HorizontalAlignment="Center">IsRead</Label>
+                                </Grid>
+                                <ItemsPresenter></ItemsPresenter>
+                            </DockPanel>
+                        </ControlTemplate>
+                    </ListBox.Template>
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition MinWidth="20" ></ColumnDefinition>
+                                    <ColumnDefinition MinWidth="320"></ColumnDefinition>
+                                    <ColumnDefinition MinWidth="60"></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <TextBlock Grid.Column="0" Text="{Binding Id}" HorizontalAlignment="Center" />
+                                <TextBlock Grid.Column="1" Text="{Binding Title}" HorizontalAlignment="Center"/>
+                                <TextBlock Grid.Column="2" Text="{Binding IsRead}" HorizontalAlignment="Center"/>
+                            </Grid>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>

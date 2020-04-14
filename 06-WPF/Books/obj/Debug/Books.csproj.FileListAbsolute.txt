@@ -12,3 +12,4 @@ C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books.Properties.Res
 C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books.csproj.GenerateResource.cache
 C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books.exe
 C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books.pdb
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\Books.csproj.CoreCompileInputs.cache

@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Debug\
+C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\obj\Release\
 Books
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\App.xaml
 11151548125
 
@@ -16,5 +16,5 @@ C:\Users\Ananas\Desktop\REPO for tsd\06-WPF\Books\App.xaml
 13-1505183044
 MainWindow.xaml;
 
-False
+True
 
