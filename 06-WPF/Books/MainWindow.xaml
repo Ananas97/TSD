@@ -25,7 +25,7 @@
                 <ColumnDefinition Name="Right" Width="1*" />
             </Grid.ColumnDefinitions>
             <Grid Grid.Column="0">
-                <ListBox ItemsSource="{Binding Books}" x:Name="Books_List" Margin="0,26,-0.2,50">
+                <ListBox ItemsSource="{Binding Books}" x:Name="Books_List" SelectionChanged="ShowDetailsBasedUponSelection" Margin="0,26,-0.2,50">
                     <ListBox.Template>
                         <ControlTemplate>
                             <DockPanel LastChildFill="False">
@@ -60,7 +60,7 @@
                 </ListBox>
             </Grid>
             <Grid Grid.Row="2">
-                <Button Content="Add" Height="20" Margin="10,229,287.8,51" Click="Add"/>
+                <Button Content="Add" Height="20" Margin="10,270,287.8,10" Click="Add"/>
             </Grid>
             <Grid Grid.Column="1">
                 <Grid.ColumnDefinitions>
@@ -87,7 +87,8 @@
                 <CheckBox Grid.Column="1" Grid.Row="3" x:Name="IsRead" Margin="10.8,91.8,124.6,10.2" Grid.RowSpan="2" />
                 <Label Grid.Column="0" Grid.Row="5" Content="Format" Margin="70,0,0.4,0.4"/>
                 <ComboBox Grid.Column="1" Grid.Row="5" x:Name="Format" Margin="0.8,0.6,20.6,18.6" />
-                <Button Grid.Row="6" Content="Delete" HorizontalAlignment="Right" Click="Delete" Grid.Column="1" Margin="0,32.2,-68.4,-24.8" Width="88"/>
+                <Button Grid.Row="5" Content="Delete" HorizontalAlignment="Right" Click="Delete" Grid.Column="1" Margin="0,32.2,69.6,-14.8" Width="78"/>
+                <Button Grid.Row="5" Content="Save changes" HorizontalAlignment="Right" Click="Edit" Grid.Column="1" Margin="0,32.2,-31.4,-14.8" Width="78"/>
             </Grid>
         </Grid>
     </Grid>
