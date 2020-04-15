@@ -1,12 +1,17 @@
-# task 1
+# task 1 + task 2
 class Integer
   def factorial
+    if (self < 0)
+      raise 'Runtime error: cannot count factorial for negative number'
+    end
+
     (1..self).inject(:*)
   end
 end
 
 puts(1.factorial) # 1
 puts(3.factorial) # 6
+puts(-1.factorial)
 
 # task 3
 module InstanceModule
