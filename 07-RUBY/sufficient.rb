@@ -20,3 +20,24 @@ class Integer
 end
 
 puts(Integer.square(4))
+
+# task 4
+module ClassModule
+  def sample(size)
+    if (size < 0)
+      raise ArgumentError
+    end
+    nums = []
+    size.times do
+      nums.push(rand(1..900))
+    end
+    puts "#{nums}"
+  end
+end
+
+class Integer
+  extend ClassModule
+end
+
+puts(Integer.sample(4))
+puts(Integer.sample(-1))
