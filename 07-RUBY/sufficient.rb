@@ -5,7 +5,18 @@ class Integer
   end
 end
 
-puts(1.factorial)
-puts(3.factorial)
+puts(1.factorial) # 1
+puts(3.factorial) # 6
 
-#task 2
+# task 3
+module InstanceModule
+  def square(n)
+    n**2
+  end
+end
+
+class Integer
+  extend InstanceModule
+end
+
+puts(Integer.square(4))
