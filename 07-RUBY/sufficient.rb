@@ -25,8 +25,9 @@ puts(Integer.square(4))
 module ClassModule
   def sample(size)
     if (size < 0)
-      raise ArgumentError
+      raise ArgumentError, 'ArgumentError: the number must be positive'
     end
+
     nums = []
     size.times do
       nums.push(rand(1..900))
