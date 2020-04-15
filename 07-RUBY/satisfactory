@@ -1,0 +1,25 @@
+# task 1
+# (Min-Max Sum) Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+def min_max(array)
+  raise 'ArgumentError: the array must be of 5 integers' if array.length != 5
+
+  current_min = max_min = 0
+  current_max = max_max = 0
+  (1...array.size).each { |i|
+    current_max = array[i] if array[i] > current_max + array[i]
+    current_max += array[i] if array[i] < current_max + array[i]
+    max_max = max_max if max_max > current_max
+    max_max = current_max if max_max > current_max
+
+    current_min = array[i] if array[i] < current_min + array[i]
+    current_min += array[i] if array[i] > current_min + array[i]
+    max_min = max_min if max_min < current_min
+    max_min = current_min if max_min > current_min
+  }
+  puts "max: #{max_max}"
+  puts "min: #{max_min}"
+
+end
+
+new = [1, 2, 3, 4, 5]
+min_max(new) # 0 0 it needs fixing
