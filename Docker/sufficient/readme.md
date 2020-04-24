@@ -1,1 +1,1 @@
-solutions for sufficient
+solutions for sutisfactory
