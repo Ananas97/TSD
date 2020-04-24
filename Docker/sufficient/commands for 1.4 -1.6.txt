@@ -1,0 +1,7 @@
+once inside the container
+pwd
+echo $PATH
+whoami
+ps
+docker container kill [OPTIONS] CONTAINER [CONTAINER...]
+docker rm --force hello-container
