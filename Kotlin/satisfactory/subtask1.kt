@@ -4,15 +4,14 @@ And create functions to:
 ○ increment the counter
 The value of the property should be private.
 In main function increment the counter and print current value.*/
+//solution available under the following link: https://pl.kotl.in/pCqKfYu2N
 
 object Singleton{
     init{
         println("singleton works now!")
     }
-    var counter = 0
-    fun getCurrentValue(){
-        println(counter)
-    }
+    private var counter:Int = 0
+    fun getCurrentValue() = println(counter)
     fun incrementCounter(){
         counter++
     }
@@ -23,5 +22,4 @@ fun main(){
     Singleton.getCurrentValue()
     Singleton.incrementCounter()
     Singleton.getCurrentValue()
-    Singleton.counter = 1
 }
