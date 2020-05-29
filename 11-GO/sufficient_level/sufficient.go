@@ -21,8 +21,19 @@ func wordcount(str string) string {
 }
 
 func rotate(numbers []int) []int {
-	return []int{4, 1, 2, 3}
+   var newArray []int
+   var k int = numbers[0]
+    for i:=0;i<k;i++{
+        newArray = numbers[1:len(numbers)]
+        newArray = append(newArray,numbers[0])
+        numbers = newArray
+    }
+
+    return numbers
+
+//	return []int{4, 1, 2, 3}
 }
+
 
 func fib(nums []int) int {
 	return 4
@@ -33,4 +44,7 @@ func main() {
   fmt.Println(palindrome("abba")) // true
   fmt.Println(palindrome("kayak")) // true
   fmt.Println(palindrome("sample")) // false
+	
+  fmt.Println(rotate([]int{1, 2, 3, 4})) // [2 3 4 1]; rotated by 1
+  fmt.Println(rotate([]int{5, 3, 20, 1, 2})) // [5 3 20 1 2]; rotated by 5
 }
